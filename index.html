@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color" content="#dc3545">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="images/icons/icon-192x192.png">
+
+    <title>Pokédex</title>
+</head>
+
+<body>
+
+    <main>
+        <nav>
+            <h1>Pokédex</h1>
+
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+            </ul>
+
+            <button id="install-button" class="install-button" hidden>
+                ↓ Instalar app
+            </button>
+        </nav>
+
+
+        <p class="intro">
+            ¡Descubre tus primeros 20 Pokémon!
+        </p>
+
+        <p id="mensaje">Cargando Pokémon...</p>
+
+        <section class="cards" id="cards-container"></section>
+    </main>
+
+    <script src="js/app.js" defer></script>
+
+</body>
+</html>

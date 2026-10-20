@@ -1,0 +1,193 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f1f3f5;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #222;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #dc3545;
+    color: white;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+nav h1 {
+    font-size: 1.8rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.intro {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+#mensaje {
+    text-align: center;
+    margin: 1.5rem 0;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.card {
+    background-color: white;
+    border-radius: 12px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+}
+
+.card h2 {
+    margin: 0.5rem 0;
+    text-transform: capitalize;
+}
+
+.card p {
+    margin-top: 0.5rem;
+    color: #555;
+    overflow-wrap: anywhere;
+}
+
+button {
+    margin-top: 1rem;
+    padding: 0.7rem 1rem;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #b82030;
+}
+
+#pokemon-detail {
+    max-width: 650px;
+    margin: 2rem auto;
+}
+
+#pokemon-detail .card img {
+    height: 280px;
+}
+
+#pokemon-detail h2 {
+    text-transform: capitalize;
+}
+
+#pokemon-detail p {
+    margin: 0.8rem 0;
+    overflow-wrap: anywhere;
+}
+
+.stats {
+    margin-top: 1rem;
+    text-align: left;
+}
+
+.stats p {
+    padding: 0.4rem;
+    background-color: #f1f3f5;
+    border-radius: 5px;
+}
+
+@media (max-width: 900px) {
+    .cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.8rem;
+    }
+
+    .card {
+        padding: 0.7rem;
+    }
+
+    .card img {
+        height: 130px;
+    }
+
+    nav h1 {
+        font-size: 1.4rem;
+    }
+}
+
+
+/* Botón para instalar la aplicación */
+
+.install-button {
+    margin-top: 0;
+    padding: 0.7rem 1rem;
+    background-color: white;
+    color: #dc3545;
+    border: 2px solid white;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: all 0.3s ease;
+}
+
+.install-button:hover {
+    background-color: #b82030;
+    color: white;
+    border-color: white;
+    transform: translateY(-2px);
+}
+
+nav {
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+@media (max-width: 600px) {
+    .install-button {
+        padding: 0.6rem 0.8rem;
+        font-size: 0.8rem;
+    }
+}
+.install-button[hidden] {
+    display: none !important;
+}
